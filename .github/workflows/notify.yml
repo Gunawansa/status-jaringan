@@ -1,0 +1,22 @@
+# notifikasi-status-jaringan/github-action/notify.yml
+# SALIN file ini ke .github/workflows/notify.yml di repo status-jaringan.
+name: Notifikasi pembaruan status
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Panggil Worker notifikasi-status-jaringan
+        env:
+          # Lewat env, bukan diinterpolasi langsung ke `run:` -- nilai
+          # rahasia tidak pernah muncul di teks perintah yang dirender
+          # (mengurangi risiko bocor lewat debug/step-echo log Actions).
+          NOTIFY_TOKEN: ${{ secrets.NOTIFY_TOKEN }}
+          NOTIFY_WORKER_URL: ${{ vars.NOTIFY_WORKER_URL }}
+        run: |
+          curl -sf -X POST "$NOTIFY_WORKER_URL/notify" \
+            -H "X-Notify-Token: $NOTIFY_TOKEN"

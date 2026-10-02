@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Status Perangkat Jaringan LKPP · 2 Oktober 2026 08:00 WIB</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Status Perangkat Jaringan LKPP · 2 Oktober 2026 08:00 WIB">
+<meta property="og:description" content="Jaringan Normal · 146/146 perangkat jaringan · 4/4 SSID aktif">
+<meta property="og:url" content="https://status-jaringan.pages.dev/status-infra-6d3c926f05fc4709967b4b8310663daf.html">
+<meta property="og:image" content="https://status-jaringan.pages.dev/status-infra-6d3c926f05fc4709967b4b8310663daf.png?v=26">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f2942">
+<style>
+  :root { --latar: #eef4fb; --kartu: #ffffff; --teks: #0f2942; --redup: #64748b; --garis: #dbe4ee; --wa: #16a34a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--latar); color: var(--teks); font: 15px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif; padding: 16px; }
+  main { max-width: 440px; margin: 0 auto; }
+  .pembuka { margin-bottom: 12px; white-space: pre-line; overflow-wrap: anywhere; }
+  .kartu { background: var(--kartu); border: 1px solid var(--garis); border-radius: 12px; overflow: hidden; }
+  .kartu img { display: block; width: 100%; height: auto; }
+  .ringkasan { margin: 12px 0 16px; white-space: pre-line; }
+  .aksi { display: grid; gap: 8px; }
+  .aksi a, .aksi button { display: block; width: 100%; text-align: center; padding: 12px; border-radius: 10px; font-family: inherit; font-size: 15px; font-weight: 600; line-height: 1.2; text-decoration: none; cursor: pointer; }
+  #bagikan-wa { background: var(--wa); color: #fff; border: 0; }
+  #salin, #unduh { background: var(--kartu); color: var(--teks); border: 1px solid var(--garis); }
+  footer { margin-top: 16px; font-size: 12px; color: var(--redup); text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <p class="pembuka">Selamat pagi, berikut kami sampaikan status perangkat jaringan Per Jumat, 2 Oktober 2026 pukul 08:00 WIB.</p>
+  <div class="kartu"><img src="https://status-jaringan.pages.dev/status-infra-6d3c926f05fc4709967b4b8310663daf.png?v=26" alt="Gambar status perangkat jaringan 2 Oktober 2026 pukul 08:00 WIB"></div>
+  <p class="ringkasan">✅ Jaringan Normal
+• Internet: normal
+• Perangkat jaringan: 146/146 aktif
+  Firewall 1/1, Router 2/2, Switch L3 4/4, Access Switch 49/49, WLC 2/2, Monitoring 1/1, Distribution Switch 2/2
+• SSID: 4/4 aktif</p>
+  <div class="aksi">
+    <a id="bagikan-wa" href="https://wa.me/?text=Selamat%20pagi%2C%20berikut%20kami%20sampaikan%20status%20perangkat%20jaringan%20Per%20Jumat%2C%202%20Oktober%202026%20pukul%2008%3A00%20WIB.%0A%0A%E2%9C%85%20Jaringan%20Normal%0A%E2%80%A2%20Internet%3A%20normal%0A%E2%80%A2%20Perangkat%20jaringan%3A%20146%2F146%20aktif%0A%20%20Firewall%201%2F1%2C%20Router%202%2F2%2C%20Switch%20L3%204%2F4%2C%20Access%20Switch%2049%2F49%2C%20WLC%202%2F2%2C%20Monitoring%201%2F1%2C%20Distribution%20Switch%202%2F2%0A%E2%80%A2%20SSID%3A%204%2F4%20aktif%0A%0Ahttps%3A%2F%2Fstatus-jaringan.pages.dev%2Fstatus-infra-6d3c926f05fc4709967b4b8310663daf.html%3Fv%3D26" target="_blank" rel="noopener noreferrer">Bagikan ke WhatsApp</a>
+    <button id="salin" type="button" data-salin="https://status-jaringan.pages.dev/status-infra-6d3c926f05fc4709967b4b8310663daf.html">Salin Link</button>
+    <a id="unduh" href="https://status-jaringan.pages.dev/status-infra-6d3c926f05fc4709967b4b8310663daf.png?v=26" download="status-infrastruktur-2-Oktober-2026.png">Unduh Gambar</a>
+    <button id="aktifkan-notif" type="button">Aktifkan Notifikasi</button>
+  </div>
+  <footer>Tarikan 2 Oktober 2026 pukul 08:00 WIB · diperbarui otomatis setiap pengecekan · Monitoring Jaringan LKPP</footer>
+</main>
+<script>
+  document.getElementById("salin").addEventListener("click", async function () {
+    var tombol = this, url = tombol.getAttribute("data-salin");
+    try {
+      await navigator.clipboard.writeText(url);
+      tombol.textContent = "Link Disalin \u2713";
+    } catch (galat) {
+      window.prompt("Salin link ini:", url);
+    }
+  });
+
+  (function () {
+    var tautanWa = document.getElementById("bagikan-wa");
+    var gambarUrl = document.querySelector(".kartu img").src;
+    var teksBagikan = decodeURIComponent((tautanWa.href.split("?text=")[1] || ""));
+    // I5(b): fetch gambar dimulai SEKARANG (saat skrip jalan di load halaman),
+    // BUKAN di dalam click handler -- kalau ditunda sampai setelah klik,
+    // jaringan lambat bisa bikin "user activation" (syarat keamanan
+    // navigator.share/window.open) sudah kedaluwarsa sebelum promise
+    // selesai, dan KEDUANYA (share maupun fallback window.open) gagal
+    // diam-diam. Promise-nya di-cache di sini supaya click handler tinggal
+    // menunggu hasil yang sudah/sedang berjalan, bukan mulai fetch baru.
+    var berkasSiap = fetch(gambarUrl).then(function (res) {
+      if (!res.ok) throw new Error("Gagal mengambil gambar status");
+      return res.blob();
+    }).then(function (blob) {
+      return new File([blob], "status-infrastruktur.png", { type: "image/png" });
+    });
+    tautanWa.addEventListener("click", function (ev) {
+      if (!(navigator.canShare && navigator.share)) return; // fallback href wa.me tetap jalan apa adanya
+      ev.preventDefault();
+      berkasSiap.then(function (berkas) {
+        if (!navigator.canShare({ files: [berkas] })) { window.open(tautanWa.href, "_blank"); return; }
+        return navigator.share({ files: [berkas], text: teksBagikan });
+      }).catch(function (galat) {
+        // I5(a): batal dari share sheet asli BUKAN kegagalan -- jangan
+        // lempar pengguna ke wa.me. Hanya error LAIN (fetch gagal,
+        // canShare false, NotAllowedError, dst) yang jatuh ke fallback.
+        if (galat && galat.name === "AbortError") return;
+        window.open(tautanWa.href, "_blank");
+      });
+    });
+  })();
+
+  
+  if ("serviceWorker" in navigator && "PushManager" in window) { navigator.serviceWorker.register("sw.js"); }
+  document.getElementById("aktifkan-notif").addEventListener("click", async function () {
+    var tombol = this;
+    try {
+      var izin = await Notification.requestPermission();
+      if (izin !== "granted") { tombol.textContent = "Izin ditolak"; return; }
+      var reg = await navigator.serviceWorker.ready;
+      var sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlBase64ToUint8Array("BFNXIcOKIfYITaihq32N68ICit8ioxTyrbYm4PetzDHMAzuYjAZDNsB6WNmDvLVKpAX-jTHqgn7guqJ7OPMMrPE") });
+      var resDaftar = await fetch("https://notifikasi-status-jaringan.gunawansa88.workers.dev/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(sub) });
+      if (!resDaftar.ok) { tombol.textContent = "Gagal mendaftar, coba lagi"; return; } // M3: 400/500 bukan sukses
+      tombol.textContent = "Notifikasi Aktif \u2713";
+    } catch (e) { tombol.textContent = "Gagal mengaktifkan"; }
+  });
+  function urlBase64ToUint8Array(base64) {
+    var padding = "=".repeat((4 - (base64.length % 4)) % 4);
+    var base64Safe = (base64 + padding).replace(/-/g, "+").replace(/_/g, "/");
+    var raw = window.atob(base64Safe);
+    var arr = new Uint8Array(raw.length);
+    for (var i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+    return arr;
+  }
+</script>
+</body>
+</html>
